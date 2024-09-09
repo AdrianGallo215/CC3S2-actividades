@@ -4,6 +4,16 @@ const app = require('../src/app');
 const server = app.listen();
 
 describe('GET /', ()=>{
+    let server;
+
+    beforeAll(() => {
+        server= app.listen(0);
+    })
+
+    afterAll(() => {
+        server.close();
+    })
+
     it('should return Hello, World!', async()=>{
         const res = await request(app).get('/');
         expect(res.statusCode).toEqual(200);
@@ -11,6 +21,3 @@ describe('GET /', ()=>{
     });
 });
 
-afterAll(async () =>{
-    server.close();
-})
