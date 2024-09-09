@@ -1,6 +1,7 @@
 
 const request = require('supertest');
 const app = require('../src/app');
+const server = app.listen();
 
 describe('GET /', ()=>{
     it('should return Hello, World!', async()=>{
