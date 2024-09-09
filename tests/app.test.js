@@ -9,3 +9,7 @@ describe('GET /', ()=>{
         expect(res.text).toBe('Hello, World!');
     });
 });
+
+afterAll(async () =>{
+    server.close();
+})
