@@ -1,22 +1,24 @@
 
 const request = require('supertest');
-const app = require('../src/app');
+
+let server;
 
 describe('GET /', ()=>{
-    let server;
+  
 
-    beforeAll(() => {
-        server = app.listen(0);
+    beforeEach(() => { 
+        server =  require('../src/server');
+    });
+    afterEach(() => { 
+        server.close(); 
     });
 
     it('should return Hello, World!', async()=>{
-        const res = await request(app).get('/');
+        const res = await request(server).get('/');
         expect(res.statusCode).toEqual(200);
         expect(res.text).toBe('Hello, World!');
     });
 
-    afterAll(() => {
-        server.close();
-    });
+    
 });
 
