@@ -7,12 +7,12 @@ describe('GET /', ()=>{
     let server;
 
     beforeAll(() => {
-        server= app.listen(0);
-    })
+        server = app.listen(0);
+    });
 
     afterAll(() => {
         server.close();
-    })
+    });
 
     it('should return Hello, World!', async()=>{
         const res = await request(app).get('/');
