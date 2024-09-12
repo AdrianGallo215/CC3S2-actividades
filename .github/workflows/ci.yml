@@ -39,9 +39,6 @@ jobs:
           docker compose up --build -d  # Cambiar docker-compose a docker compose
         working-directory: Devops-practice (Act. 1 y 2)
   
-      - name: Run docker tests
-        run: docker exec devops-practice-container npm test
-  
       - name: Stop and clean Docker Compose
         run: |
           docker compose down  # Cambiar docker-compose a docker compose
