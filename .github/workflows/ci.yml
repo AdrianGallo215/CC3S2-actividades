@@ -26,6 +26,7 @@ jobs:
 
       - name: Run tests
         run: npm test
+        working-directory: Devops-practice (Act. 1 y 2)
 
       - name: Build Docker image
         run: docker build -t devops-practice . 
