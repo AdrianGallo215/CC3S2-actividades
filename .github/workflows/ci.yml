@@ -30,7 +30,7 @@ jobs:
         working-directory: Devops-practice (Act. 1 y 2)
 
       - name: Build Docker image
-        run: docker build -t devops-practice  
+        run: docker build -t devops-practice 
         working-directory: Devops-practice (Act. 1 y 2)
       
       - name: Run Docker container
