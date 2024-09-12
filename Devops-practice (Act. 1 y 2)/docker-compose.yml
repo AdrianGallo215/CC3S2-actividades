@@ -18,4 +18,4 @@ services:
   grafana:
     image: grafana/grafana
     ports:
-      -"3001:3001"
+      - "3001:3001"
