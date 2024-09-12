@@ -23,10 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: Devops-practice (Act. 1 y 2)
 
       - name: Run tests
         run: npm test
-        working-directory: https://github.com/AdrianGallo215/devops-practice/blob/96398b4de936bfa21b0e8873c3e2df2b834a5035/Devops-practice%20(Act.%201%20y%202)
+        working-directory: Devops-practice (Act. 1 y 2)
 
       - name: Build Docker image
         run: docker build -t devops-practice . 
