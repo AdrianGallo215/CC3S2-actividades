@@ -1,9 +1,4 @@
-[submodule "Actividad-1"]
-	path = Actividad-1
-	url = https://github.com/AdrianGallo215/Devops-practice-Actividad-1.git
-[submodule "Actividad-2"]
-	path = Actividad-2
-	url = https://github.com/AdrianGallo215/Devsecops-practice-Actividad-2.git
+
 [submodule "Actividad-3"]
 	path = Actividad-3
 	url = https://github.com/AdrianGallo215/Actividad-3.git
