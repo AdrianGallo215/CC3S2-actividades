@@ -8,3 +8,6 @@
 [submodule "Actividad-2"]
 	path = Actividad-2
 	url = https://github.com/AdrianGallo215/Devsecops-practice-Actividad-2.git
+[submodule "Devops-practice-Act1"]
+	path = Devops-practice-Act1
+	url = https://github.com/AdrianGallo215/Devops-practice-Actividad-1.git
